@@ -38,4 +38,9 @@ public class UserService {
         return passwordEncoder.matches(rawPassword, encodedPassword);
     }
 
+    // Creation utilisateur
+    public User createUser(User user) {
+        return userRepository.save(user);
+    }
+
 }

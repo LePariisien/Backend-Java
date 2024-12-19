@@ -22,6 +22,7 @@ public class UserController {
     @Autowired
     private UserService userService;
 
+
     
     private final String SECRET_KEY = "mySecretKey";
 
@@ -47,6 +48,13 @@ public class UserController {
         }
         return ResponseEntity.status(401).body(null); // Identifiants invalides
     }
+
+    @PostMapping("/create-user")
+    public ResponseEntity<User> createUser(@RequestBody User user) {
+        User createdUser = userService.createUser(user);
+        return ResponseEntity.ok(createdUser);
+    }
+    
 
     @PostMapping("/register")
     public ResponseEntity<User> registerUser(@RequestBody User user) {
