@@ -1,4 +1,4 @@
-package com.Student.Service;
+package com.Student.Student.Service;
 
 import java.util.List;
 import java.util.Optional;
@@ -6,10 +6,10 @@ import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.Student.Dto.SchoolDto;
-import com.Student.Dto.StudentWithSchoolDto;
-import com.Student.Entity.Student;
-import com.Student.Repository.StudentRepository;
+import com.Student.Student.Dto.SchoolDto;
+import com.Student.Student.Dto.StudentWithSchoolDto;
+import com.Student.Student.Entity.Student;
+import com.Student.Student.Repository.StudentRepository;
 
 
 @Service

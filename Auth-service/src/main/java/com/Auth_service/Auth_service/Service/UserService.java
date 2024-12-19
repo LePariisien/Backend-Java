@@ -1,7 +1,7 @@
-package com.Auth_service.Service;
+package com.Auth_service.Auth_service.Service;
 
-import com.Auth_service.Entity.User;
-import com.Auth_service.Repository.UserRepository;
+import com.Auth_service.Auth_service.Entity.User;
+import com.Auth_service.Auth_service.Repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
@@ -37,4 +37,5 @@ public class UserService {
     public boolean checkPassword(String rawPassword, String encodedPassword) {
         return passwordEncoder.matches(rawPassword, encodedPassword);
     }
+
 }

@@ -1,12 +1,12 @@
-package com.Student.Controller;
+package com.Student.Student.Controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import com.Student.Dto.StudentWithSchoolDto;
-import com.Student.Entity.Student;
-import com.Student.Service.StudentService;
+import com.Student.Student.Dto.StudentWithSchoolDto;
+import com.Student.Student.Entity.Student;
+import com.Student.Student.Service.StudentService;
 import java.util.List;
 
 @RestController

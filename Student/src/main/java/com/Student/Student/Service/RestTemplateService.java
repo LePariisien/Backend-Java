@@ -1,10 +1,10 @@
-package com.Student.Service;
+package com.Student.Student.Service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
-import com.Student.Dto.SchoolDto;
+import com.Student.Student.Dto.SchoolDto;
 
 @Service
 public class RestTemplateService {

@@ -1,4 +1,4 @@
-package com.Student.config;
+package com.Student.Student.config;
 
 import org.springframework.cloud.client.loadbalancer.LoadBalanced;
 import org.springframework.context.annotation.Bean;

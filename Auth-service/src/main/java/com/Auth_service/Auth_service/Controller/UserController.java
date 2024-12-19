@@ -1,7 +1,7 @@
-package com.Auth_service.Controller;
+package com.Auth_service.Auth_service.Controller;
 
-import com.Auth_service.Entity.User;
-import com.Auth_service.Service.UserService;
+import com.Auth_service.Auth_service.Entity.User;
+import com.Auth_service.Auth_service.Service.UserService;
 
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
@@ -63,5 +63,10 @@ public class UserController {
 
         User registeredUser = userService.registerUser(user);
         return ResponseEntity.ok(registeredUser);
+    }
+
+    @GetMapping("/users")
+    public ResponseEntity<String > getUsers() {
+        return ResponseEntity.ok("Liste des utilisateurs");
     }
 }

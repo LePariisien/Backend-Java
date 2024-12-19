@@ -1,6 +1,6 @@
-package com.Student.Dto;
+package com.Student.Student.Dto;
 
-import com.Student.Entity.Student;
+import com.Student.Student.Entity.Student;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
